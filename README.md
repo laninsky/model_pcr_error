@@ -3,7 +3,7 @@
 model_pcr_error simulates the creation of 'new sequence' due to PCR errors  
 It requires a few arguments, but there are defaults if you just want to see how it works  
 
-Required parameters are:  
+# Required parameters are:  
 fragment_length: the length (bp) of PCR product you wish to simulate, default 200  
 error_rate: the error rate (per bp/per duplication) of the polymerase, default 0.0001  
 pcr_cycles: the number of pcr cycles you wish to simulate. Note, no exhaustion of reagents is currently modeled. Default, 20  
@@ -21,3 +21,5 @@ model_pcr_error (fragment_length,error_rate,pcr_cycles,starting_copies,stochasti
 #e.g. to model 366 bp fragment, 100 starting copies, and 10 replicates (w/ defaults for everything else
 model_pcr_error(366,starting_copies = 100,replicates=10)
 ```
+
+Note - results of replicates are independent e.g. error1 in replicate1 is unlikely to have the same sequence as error1 in replicate2 
