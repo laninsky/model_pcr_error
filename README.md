@@ -23,3 +23,6 @@ model_pcr_error(366,starting_copies = 100,replicates=10)
 ```
 
 Note - results of replicates are independent e.g. error1 in replicate1 is unlikely to have the same sequence as error1 in replicate2 
+
+# Version history
+Wrote this as a one-off goof to help out a lab mate. I am no longer actively maintaining this repository, but will respond to issues.
